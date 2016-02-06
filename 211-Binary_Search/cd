@@ -1,0 +1,24 @@
+Space allocated
+
+Increasing Capacity
+Increasing Capacity
+Increasing Capacity
+Increasing Capacity
+
+Reading in Data Complete
+Target Value: 2350
+Space allocated
+
+
+Copying into new Array
+Array Copy Successful and Verified
+
+Sorting Successful and Verified
+
+Searching Unsorted Array Linearly
+Target Value:2350 found with Linear search in Array position 165 with 166 comparisons
+
+Searching Sorted Array with Binary method
+Target Value:2350 found with Binary search in Array position 213 with 9 comparisons
+Memory Freed
+Memory Freed
