@@ -21,7 +21,7 @@ public class CustomAdapter extends ArrayAdapter<String>
 
     /*
     * Rest of the arrays are not relevant to the operation
-    * and not brouught into this class
+    * and not brought into the constructor
     * */
     private final Activity context;
 
@@ -43,6 +43,7 @@ public class CustomAdapter extends ArrayAdapter<String>
     }
 
     /*Returning a view object*/
+    /*Think of this as a panel Songname, artist, and image to the right */
     public View getView(int position, View v, ViewGroup vg)
     {
         LayoutInflater inflater = context.getLayoutInflater();
