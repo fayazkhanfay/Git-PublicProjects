@@ -1,0 +1,35 @@
+0.
+After merging, run the program “./0” and note the value.
+1.
+I first tried using strace but didn’t help. So, I tried going into gdb.
+I knew the program is generating a random number.
+I ran the program and wrote “b rand” now there is a breakpoint at that line.
+After, I typed “finish” and revealed the value returned from rand.
+Type continue and program will ask question and type in the value. Success!
+2.
+Initially, using ltrace and strace but revealed a lot of irrelevant information.
+So, I did some research on lib curl and looked at the documentation. 
+After reading documentation takes in parameters returns 0 when ran successfully. 
+Using ltrace revealed that the lib curl was returning 0. My conclusion the answer is yes
+3.
+Initially, instinctively used gdb to solve the issue but it didn’t help. 
+Then, I tried using ltrace and noticed random phrase in the print out-iamspecial. 
+So, I decided to create a iamspecial.c and put a int main in there. 
+After a lot of frustration, I deleted the file and created another file with but not .c file. 
+Now I ran the program and it was printing out correct file found but also stating check failed. 
+After a lot of researching, I realized to fix the permissions on the file. 
+I entered chmod 777 iamspecial and re-ran the file. Success!
+4.
+I first tried doing strace and showed irrelevant information.
+I tried creating a library file called lib361.so but it didn’t help. I looked online on how to properly create the object. 
+gcc -c -Wall -Werror -fpic lib361.c and after typed in 
+gcc -shared -o lib361.so lib361.o
+export LD_LIBRARY_PATH=/home/fkhan42/hw2:$LD_LIBRARY_PATH
+Now it is printing out “this program tests the implementation of a dynamically linked library”. 
+Then I tried using ltrace to diagnose and realized that a function is taking in 4 parameters into secretoperation. 
+The function is taking in 2 int and a pointer. I ran the program and stating the Assertion ‘result’ ==10 failed. 
+I came to a conclusion that the function is returning 10. But it was not working every time. 
+I am came up with a mathematical formula to return the sum of 2 numbers. 
+This worked but was seg-faulting and had to come up with another formula and that properly worked. 
+  
+ 
