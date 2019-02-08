@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/youtube_v"
-    android:title="Video" />
-    <item android:id="@+id/song_menu"
-    android:title="Song Wikipedia" />
-    <item android:id="@+id/artist_menu"
-    android:title="Artist Wikipedia" />
-</menu>
