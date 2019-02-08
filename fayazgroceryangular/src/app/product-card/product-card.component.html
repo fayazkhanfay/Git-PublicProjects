@@ -1,0 +1,13 @@
+ <!--*ngIf will only render if user types something into input field then will display card-->
+<!--from https://getbootstrap.com/docs/4.2/components/card/-->
+<div *ngIf="product.title" class="card" > <!--i= index returns current index of product-->
+  <img *ngIf="product.imageUrl" src="{{ product.imageUrl }}" class="card-img-top" alt="{{product.title}}">
+    <div class="card-body">
+      <h4 class="card-title">{{product.title}}</h4>
+      <p class="card-text">{{product.price | currency: 'USD': true}}</p>
+    </div>
+    <div class="card-footer">
+      <!--btn-block: to make button full width of card-->
+      <a *ngIf="showActions" href="#" class="btn btn-primary btn-block">Add to Cart</a>
+    </div>
+</div>

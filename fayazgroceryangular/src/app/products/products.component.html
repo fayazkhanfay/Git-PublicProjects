@@ -1,0 +1,21 @@
+<div class="row"> <!--1 row and two col-->
+  <div class="col-3"> <!--takes 3 of 12 columns of pg-->
+  <!--sending category to product filter because this class brings route params
+    and how we initialize this category field-->
+  <product-filter [category]="category"></product-filter>
+  </div> 
+  <div class="col"> <!--col will take remainig of space-->
+    <div class="row">
+        <ng-container *ngFor="let p of filteredProducts; let i = index">
+            <div class="col">
+            <product-card [product]="p"></product-card>
+            </div>
+             <!--Below is line break the math is to calculate when to put in line-->
+            <div *ngIf="(i + 1) % 2 === 0 "class="w-100"></div> 
+        </ng-container>
+    </div>
+  </div>     
+</div>
+
+
+

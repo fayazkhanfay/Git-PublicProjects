@@ -1,0 +1,68 @@
+<p>
+    <a routerLink= "/admin/products/new"  class="btn btn-primary">New Products</a>
+</p>
+<p>
+    <!--New table provides search,pagination,limit capability in table-->
+    <input 
+    #query
+    (keyup)="filter(query.value)"
+    type="text" class="form-control" placeholder="Search...">
+</p>
+
+<!--reload event is raised everytime a change is detected: table paramaters, sort order, page size...-->
+<data-table
+    [items]="items"
+    [itemCount]="itemCount" 
+    (reload)="reloadItems($event)"
+>
+
+<!--'' because it is a string and not a property in a field-->
+<data-table-column
+    [property]="'title'"
+    [header]="'Title'"
+    [sortable]="true"
+    [resizable]="true"
+>
+</data-table-column>
+<data-table-column
+    [property]="'price'"
+    [header]="'Price'"
+    [sortable]="true"
+    [resizable]="true"
+>
+<!--show price as currency--> <!--let-item give row of table-->
+<ng-template #dataTableCell let-item="item">
+    {{item.price | currency: 'USD':true}}
+</ng-template>
+</data-table-column>
+<data-table-column
+    [property]="'$key'"
+>
+    <!--show price as currency--> <!--let-item give row of table-->
+    <ng-template #dataTableCell let-item="item">
+        <a [routerLink]="['/admin/products/', item.$key]">Edit</a>
+    </ng-template>
+</data-table-column>
+
+</data-table>
+
+<!-- OLD bootstrap table
+<table class="table">
+    <thead> --> <!--heading-->
+      <!--  <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of filteredProducts">
+            <td>{{p.title}}</td>
+            <td>{{p.price}}</td>
+            <td>
+            -->    <!--made routerlink dynamic based on key-->
+             <!---   <a [routerLink]="['/admin/products/', p.$key]">Edit</a>
+            </td>
+        </tr>
+    </tbody>
+</table> -->
