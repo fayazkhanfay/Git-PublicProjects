@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/quote_fragment.xml",
+        "source": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/layout/quote_fragment.xml"
+    },
+    {
+        "merged": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/title_item.xml",
+        "source": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/src/main/res/layout/title_item.xml"
+    },
+    {
+        "merged": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/quote_fragment.xml",
+        "source": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/src/main/res/layout/quote_fragment.xml"
+    },
+    {
+        "merged": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/title_item.xml",
+        "source": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/layout/title_item.xml"
+    },
+    {
+        "merged": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/title_item.xml",
+        "source": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/layout/title_item.xml"
+    },
+    {
+        "merged": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/quote_fragment.xml",
+        "source": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/layout/quote_fragment.xml"
+    },
+    {
+        "merged": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/layout/main.xml"
+    }
+]

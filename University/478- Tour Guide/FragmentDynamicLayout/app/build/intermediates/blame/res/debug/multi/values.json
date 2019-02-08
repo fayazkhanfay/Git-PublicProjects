@@ -1,0 +1,223 @@
+[
+    {
+        "outputFile": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 8,
+                    "endColumn": 19,
+                    "endOffset": 637
+                },
+                "from": {
+                    "file": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 642,
+                    "endLine": 15,
+                    "endColumn": 19,
+                    "endOffset": 899
+                },
+                "from": {
+                    "file": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endLine": 9,
+                        "endColumn": 19,
+                        "endOffset": 371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 904,
+                    "endColumn": 58,
+                    "endOffset": 958
+                },
+                "from": {
+                    "file": "/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 15,
+                    "endColumn": 19,
+                    "endOffset": 582
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endLine": 16,
+                        "endColumn": 19,
+                        "endOffset": 641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 587,
+                    "endLine": 29,
+                    "endColumn": 19,
+                    "endOffset": 1306
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 646,
+                        "endLine": 30,
+                        "endColumn": 19,
+                        "endOffset": 1365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1311,
+                    "endLine": 35,
+                    "endColumn": 19,
+                    "endOffset": 1515
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1520,
+                    "endLine": 41,
+                    "endColumn": 19,
+                    "endOffset": 1881
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 1886,
+                    "endColumn": 58,
+                    "endOffset": 1940
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 15,
+                    "endColumn": 19,
+                    "endOffset": 579
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 114,
+                        "endLine": 16,
+                        "endColumn": 19,
+                        "endOffset": 638
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 584,
+                    "endLine": 29,
+                    "endColumn": 19,
+                    "endOffset": 1349
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 643,
+                        "endLine": 30,
+                        "endColumn": 19,
+                        "endOffset": 1408
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1354,
+                    "endLine": 35,
+                    "endColumn": 19,
+                    "endOffset": 1558
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1563,
+                    "endLine": 41,
+                    "endColumn": 19,
+                    "endOffset": 1924
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 1929,
+                    "endColumn": 58,
+                    "endOffset": 1983
+                },
+                "from": {
+                    "file": "/Users/FayazKhan/Desktop/GoogleDrive/Spring2016/CS478/Proj/3/Submitted/FragmentDynamicLayout/app/src/main/res/values/strings.xml"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+# test all commands on unordered list and recursive file traversal
+# if the program hangs, it means that you have infinite recursion
+h
+a
+s 1 u
+f f2.txt
+l 1
+r 1
+1
+l 1
+# test the other get and remove methods on stack
+s 8 s
+i 8 1
+i 8 2
+g 8
+l 8
+r 8
+l 8
+# at this points h and a should print something
+# get command should print "1"
+# list command should print list 1 which contains only "1"
+# second list command should print empty list 1
+#
+# error testing
+# unknown command
+garbage
+# removing with invalid index
+r 1
+hello
+# removing from empty list
+r 1
+1000
+# removing from list out of range
+r 10
+# removing from null list
+r 2
+s 2 u
+i 2 1
+# removing with index out of range
+r 2
+1000
+# opening non existing file
+f hellokittylover
+# insert, list, get from null list
+i 3 3
+l 3
+g 3
