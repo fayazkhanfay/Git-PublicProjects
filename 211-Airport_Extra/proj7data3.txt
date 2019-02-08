@@ -1,4 +1,0 @@
-# test travel from 7 to 2 and from 5 to 5
-t 7 2
-t 5 5
-w 7
