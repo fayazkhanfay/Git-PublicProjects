@@ -1,0 +1,23 @@
+* {
+    /*  "*" Targets all elements purpose here to remove all padding and margin*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /*by default background color is white but still set as white*/
+    background-color: #fff;
+    color: #555; /*Font*/
+    font-family: 'Lato', 'Arial', sans-serif; /*css file is included in html from google; included alt fonts incase.*/
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;/*Renders fonts better*/
+}
+
+.row{
+    /*all content will be in rows because of responsive grid system*/
+    max-width: 1140px;/*only value will be absolute*/
+    /*margin: 0 auto 0 auto Top right down left below is a short cut*/
+    margin: 0 auto;
+}

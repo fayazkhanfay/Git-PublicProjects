@@ -20,8 +20,8 @@ export class ProductFormComponent implements OnInit {
     private categoryService: CategoryService, 
     private productService: ProductService
     ) { 
-    this.product ={};//for initial loading because will give null refernce exception 
-                    // if set to empty array outside of contructor will get error
+    this.product ={};//for initial loading because will give null reference exception 
+                    // if set to empty array outside of constructor will get error
                     // Property 'title' does not exist on type '{}'. when ng build --prod
     this.categories$ = categoryService.getAll();
 
