@@ -7,18 +7,107 @@
         <!--http://www.responsivegridsystem.com/ It's a quick, easy & flexible way to create a responsive web site.-->
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css"> 
+        <!--using icons from https://ionicons.com/v2/ copied and pasted css and font in vendor directory -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css"> 
         <!--From Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-        <title>Omnifood</title>
+        <title>Fayaz Khan</title>
     </head>
     <body>
-        <div class="row">
-                <h1>
-                        Omnifood
-                </h1>
-        </div>
-        
+        <!--header works like div which means work like a container to put content in-->
+        <!--tells google this is header and not a anonymous div-->
+        <header>
+            <nav>
+                <!--row will always be centered-->
+                <div class="row">
+                    <!--<img src="/html5CSS3/resources/img/logo-white.png" alt="Logo goes here" class="logo">-->
+                    <h1 class="icon-main-header">Fayaz Khan</h1>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#">Food delivery</a>   
+                        </li>
+                        <li>
+                            <a href="#">How it works</a>   
+                        </li>
+                        <li>
+                            <a href="#">Our cities</a>   
+                        </li>
+                        <li>
+                            <a href="#">Sign up</a>   
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <!--br == next line-->
+                <h1>Mock website using:<br> HTML5, CSS3, jQuery & Firebase</h1>
+                <a class= "btn btn-full" href="#">I’m hungry</a>
+                <a class= "btn btn-ghost" href="#">Show me more</a>
+            </div>
+        </header>
+        <!--section is like a header but a container-->
+        <section class="section-feature">
+            
+            <div class="row">
+                <h2>
+                    <!--&mdash is "-" but thick " -->
+                        Get food fast &mdash; not fast food
+                </h2>
+                <p class="long-copy">
+                        Hello, we’re HTML5 & CSS3, your new premium food delivery service. 
+                        We know you’re always busy. No time for cooking. So let us take care of that, 
+                        we’re really good at it, we promise!
+                </p>
+            </div>
+            <div class="row">
+                <!--span-1-of-4 is the width of column coming from vendors/css/Grid.css-->
+                <div class="col span-1-of-4 box">
+                    <!--added css class box because don't ever modify classes coming from Grid-->
+                    <!--"i" is for icon the class is coming from vendors/css/ionicons.min.css-->
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>
+                        Never cook again! We really mean that. Our subscription plans include up to 365 
+                        days/year coverage. You can also choose to order more flexibly if that's your style.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>
+                        You're only twenty minutes away from your delicious and super healthy meals delivered 
+                        right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <h3>100% organic</h3>
+                    <p>
+                        All our vegetables are fresh, organic and local. Animals are raised without added hormones 
+                        or antibiotics. Good for your health, the environment, and it also tastes better!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Order anything</h3>
+                    <p>
+                        We don't limit your creativity, which means you can order whatever you feel like. You can 
+                        also choose from our menu containing over 100 delicious meals. It's up to you!
+                    </p>
+                </div> 
+            </div>
+        </section>
 
+
+
+
+
+
+
+
+
+
+        <!--Below 2 script is for firebase-->
         <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
         <script>
         // Initialize Firebase

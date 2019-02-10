@@ -1,3 +1,6 @@
+/*-----------------------------------------------------*/
+/*BASIC SETUP*/
+/*-----------------------------------------------------*/
 * {
     /*  "*" Targets all elements purpose here to remove all padding and margin*/
     margin: 0;
@@ -14,10 +17,206 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;/*Renders fonts better*/
 }
-
+/*-----------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*-----------------------------------------------------*/
 .row{
     /*all content will be in rows because of responsive grid system*/
     max-width: 1140px;/*only value will be absolute*/
     /*margin: 0 auto 0 auto Top right down left below is a short cut*/
     margin: 0 auto;
+}
+section{
+    /*
+    Margin is outer space of an element, while padding is inner space of an element. 
+    Margin is the space outside the border of an element, while padding is the space 
+    inside the border of it. Margin accepts the value of auto: margin: auto , but you 
+    can't set padding to auto.
+    */
+    margin: 80px;
+}
+
+.box {
+    padding: 1%;
+}
+/* ----- HEADINGS --------- */
+h1,
+h2,
+h3{
+   
+    font-weight: 300;/*general rule: larger the font then decrease font weight */
+    text-transform: uppercase; /*transform string to uppercase*/
+    
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;/*take % from html font size */
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+/*below is a yellow line under "GET FOOD FAST..."
+  "after" allows you to put content with css will
+  after h2 element
+*/
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto; /*centers line*/
+    margin-top: 30px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+/* ------ PARAGRAPHS --------- */
+.long-copy{
+    line-height: 145%; /*Rule of typography: line height should be between 120-145% */
+    width: 70%;
+    margin-left: 15%; /*to center content but it simple math 15% left-right and 70% for content*/
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;/*spacing in between lines*/
+}
+
+/* ------ ICONS --------- */
+.icon-big {
+    /*treat icons like fonts*/
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+.icon-main-header{
+    font-size: 200%;
+    color: #fff;
+    float: left;
+    /*height: 100px;
+    width: auto;*/
+    margin-top: 35px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+/* ------ BUTTONS --------- */
+
+
+/*both will look same */
+.btn:link,
+.bth:visited {
+    display: inline-block;
+    padding: 10px 30px;/*vertical sides*/
+    font-weight: 300;
+    text-decoration: none;/*removes underline from text*/
+    border-radius: 200px; /*rounds buttons*/
+    transition: background-color 0.2s, border 0.2s, color 0.2s;/*nice transition of color when hovering over button*/
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;/*flatuicolors.com*/
+    border: 1px solid #e67e22; /*to make both buttons same size: box model*/
+    color: #fff;
+    margin-right: 15px; /*space in between buttons*/
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22; /*small border around button but transparent center*/
+    color: #e67e22;
+}
+
+/*when hovering over button*/
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17; 
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17; /*when hovering the border should have same color*/
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17; /*small border around button but transparent center*/
+    color: #fff;
+}
+
+/*-----------------------------------------------------*/
+/*HEADER*/
+/*-----------------------------------------------------*/
+
+header{
+    /*to make text in text box more visible. linear-gradient allows to add a layer of transparent color over image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url(img/fruits.jpg);
+    background-size: cover; /*to see whole image*/
+    background-position: center;/*photo will auto resize properly */
+    height: 100vh;/*100% of the view port*/
+    /*will leave above a white gap.Solution removing top margin from h1*/
+}
+
+.hero-text-box{
+    position: absolute;/*need to use absolute to make sure box is centered vertical and horizontal*/
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*Translates element half of its width and height to the up and to the left. If not 
+                                        done then text box is off center*/
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left; /*will stay on left side*/
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none; /*gets rid of bullet points*/
+    margin-top: 55px;
+}
+/*applies to list items but inline block will make them horizontal list before it was vertical list*/
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/*applies to link in list */
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px; /*lowers border*/
+    color:#fff;
+    text-decoration: none; /*removes default underline under words will be replaced with border*/
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22; /*looks like underline but it is a border */
+}
+.name-nav{
+    
+    color: #fff;
+    font-size: 240%;/*take % from html font size */
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
