@@ -17,6 +17,16 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;/*Renders fonts better*/
 }
+/*added this to add spacing between bottom of photo and "HOW IT WORKS...."*/
+/*to clear float*/
+.clearfix{zoom:1}
+.clearfix::after{
+    content: '.';
+    clear: both; /*actual clearing happens here*/
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /*-----------------------------------------------------*/
 /*REUSABLE COMPONENTS*/
 /*-----------------------------------------------------*/
@@ -111,7 +121,42 @@ h3{
     margin-top: 35px;
     word-spacing: 4px;
     letter-spacing: 1px;
+    
 }
+
+.icon-small{
+    /*align icons to text*/
+    display: inline-block;
+    widows: 30px;;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: -5px;
+
+    /*important to align icons to text*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ------ LINKS --------- */
+
+a:link,
+a:visited{
+    color:#e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
 /* ------ BUTTONS --------- */
 
 
@@ -168,6 +213,7 @@ header{
     background-position: center;/*photo will auto resize properly */
     height: 100vh;/*100% of the view port*/
     /*will leave above a white gap.Solution removing top margin from h1*/
+    background-attachment: fixed; /*cool effect: the image in background stays in same place while scrolling*/
 }
 
 .hero-text-box{
@@ -219,4 +265,165 @@ header{
     font-size: 240%;/*take % from html font size */
     word-spacing: 4px;
     letter-spacing: 1px;
+}
+
+/*-----------------------------------------------------*/
+/* FEATURES */
+/*-----------------------------------------------------*/
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/*-----------------------------------------------------*/
+/* MEALS */
+/*-----------------------------------------------------*/
+
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%; /*4 images each 25% sums up to 100%*/
+}
+.meal-photo{
+    width: 100%;/*take 100% space of parent meals-showcase li*/
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;/*used with opacity to darken image */
+}
+
+.meal-photo img {
+    opacity: 0.7;/*makes image less transparent*/
+    width: 100%; /*becomes a small nice square image*/
+    height: auto;
+    transform: scale(1.15); /*image will slightly be zoomed */
+    transition: transform 0.5s, opacity 0.5s; /*smooths zoom and zoom out and darken of image*/
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);/*when hovering over img will zoom out */
+}
+
+/*-----------------------------------------------------*/
+/* HOW IT WORKS */
+/*-----------------------------------------------------*/
+
+/*make section slightly gray*/
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+/*selector: specifies which item need css with same class name */
+.steps-box:first-child{
+    text-align: right;/*not just for text also work for all elements*/
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+/*adding space to last item*/
+.works-step:last-of-type{
+    /*same as last-child*/
+    margin-bottom: 80px;
+}
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+/*need to remove orange line under app store and google play because of "a" links css */
+.btn-app:link,
+.btn-app:visited{
+    border:0;
+}
+.btn-app img{
+    /*App store and Google play*/
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*-----------------------------------------------------*/
+/* CITIES */
+/*-----------------------------------------------------*/
+
+.box img{
+    /*want image to be as wide as box*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px; 
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+/*-----------------------------------------------------*/
+/* TESTIMONIALS */
+/*-----------------------------------------------------*/
+
+.section-testimonials {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/hero1.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed; /*cool effect: the image in background stays in same place while scrolling*/
+    margin: 0 0;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic; /*when using new fonts these need to be included*/
+    line-height: 145%;
+    position: relative; /*if not here then won't be able to see quote*/
+    margin-top: 40px;
+}
+/*puts a large string in before the quote*/
+blockquote:before {
+    content: "\201C";/*left quotation mark had to search for (iso)*/
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;/*to align picture and name*/
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
