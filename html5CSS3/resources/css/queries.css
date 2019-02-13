@@ -12,6 +12,10 @@
         margin-left: 25px;
         padding-left: 0;
     }
+
+    .footer-nav{
+        display: none;
+    }
     header li{
         padding: 0 0;
     }
@@ -19,7 +23,7 @@
         display: block;
         border: 0;
     }
-
+  
     .btn-app img{
         /*App store and Google play*/
         height: 60px;
@@ -42,11 +46,11 @@
         font-size: 80%;
     }
     .hero-text-box h1{
-        font-size: 145%
+        font-size: 130%
     }
 
     .social-links{
-        
+        display: none;
         padding-left: 0%;
     }
   
