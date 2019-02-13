@@ -5,6 +5,51 @@
 @media only screen and (max-width: 480px){
     section {padding: 25px 0;}
     .contact-form{width: 100%;}
+
+    .main-nav{
+        float: left;
+        margin-top: 0px;
+        margin-left: 25px;
+        padding-left: 0;
+    }
+    header li{
+        padding: 0 0;
+    }
+    .main-nav li{
+        display: block;
+        border: 0;
+    }
+
+    .btn-app img{
+        /*App store and Google play*/
+        height: 60px;
+        width: 100px;
+        margin-right: 0;
+        display: none;
+    }
+    .section-steps h2{
+        font-size: 125%;
+    }
+
+    .section-steps img{
+        font-size: 125%;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border:0;
+        padding:0 0;
+        font-size: 80%;
+    }
+    .hero-text-box h1{
+        font-size: 145%
+    }
+
+    .social-links{
+        
+        padding-left: 0%;
+    }
+  
 }
 
 /*Size of an iPad: small phones to small tablets*/
@@ -12,6 +57,14 @@
     body{font-size: 16px;}
     section{ padding: 30px 0;}
 
+    .social-links{
+        float: left;
+        padding-left: 120px;
+    }
+    .section-feature h2 {
+        font-size: 120%;
+    }
+    
     .row,
     .hero-text-box{padding: 0 4%;}
 
@@ -93,6 +146,14 @@
         width: 80%;
         margin-left: 10%;
     }
+
+    .main-nav {
+
+        padding-left: 100px;
+        }/*hides navigation*/
+
+
+
 
     .steps-box{margin-top:10px;}
     .steps-box:last-child{margin-top:10px;}
