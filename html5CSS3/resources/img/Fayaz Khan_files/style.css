@@ -281,18 +281,6 @@ header{
     word-spacing: 4px;
     letter-spacing: 1px;
 }
-/*-------Mobile Nav---------*/
-.mobile-nav-icon{
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;/*no link with icon. This will give pointer when user selects icon*/
-    display: none;
-}
-
-.mobile-nav-icon i{
-    font: 200%;
-    color: #fff;
-}
 
 /*-----Sticky Nav--------*/
 .sticky{
@@ -305,8 +293,6 @@ header{
     z-index: 9999;/*this specifies this element should always be on top ex: sticky nav over pics. 
                     9999 is the highest number, it is a ranking system. */
 }
-
-.sticky .main-nav{margin-top: 18px;}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -653,29 +639,4 @@ footer p{
     color: #888;
     text-align: center;
     margin-top: 20px;
-}
-
-
-/*-----------------------------------------------------*/
-/* ANIMATIONS */
-/*-----------------------------------------------------*/
-
-/*In order to give allusion of animation first need to hide then appear*/
-.js--wp-1,
-.js--wp-2,
-.js--wp-3{
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-}
-
-.js--wp-4{
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-}
-
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated{
-    opacity: 1;
 }
